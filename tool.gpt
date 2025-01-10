@@ -1,10 +1,3 @@
-Name: MovieRecommender
-Chat: true
-Tools: fetch-movies, fetch-snacks, fetch-streaming
-Description: An intelligent agent that recommends movies, snacks, and streaming links while leveraging regional news trends.
-
----
-
 Name: fetch-movies
 Description: Fetches top-rated movies from TMDb based on genre, region, and language.
 Param: genre_id: The movie genre ID (e.g., "28" for Action, "35" for Comedy).
