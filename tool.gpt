@@ -1,4 +1,4 @@
-Name: MovieRecommender
+Name: Movie-Concierge
 Tools: fetch-movies, fetch-snacks, fetch-streaming
 Description: An intelligent agent that recommends movies, snacks, and streaming links while leveraging regional news trends.
 
