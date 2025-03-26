@@ -14,6 +14,14 @@ Param: language: The language for movie descriptions (e.g., "en-US", "hi-IN").
 
 ---
 
+Name: fetch-movie-details
+Description: Fetches details of a specific movie using its TMDb ID.
+Param: movie_id: The unique TMDb movie ID.
+
+#!/usr/bin/env npm --silent --prefix ${GPTSCRIPT_TOOL_DIR} run tool -- fetch-movie-details
+
+---
+
 Name: fetch-snacks
 Description: Fetches snack recommendations tailored to the movie genre and region.
 Param: genre: The movie genre (e.g., "Action", "Romance").

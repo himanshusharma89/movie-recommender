@@ -1,4 +1,5 @@
 import { discoverMovies } from './movieService.js';
+import { getMovieDetails } from  './movieService.js';
 import { getSnackRecommendations } from './snackService.js';
 import { getStreamingLinks } from './streamingService.js';
 import 'dotenv/config'; // For reading .env variables
@@ -20,6 +21,11 @@ try {
       const genre_id = process.env.GENRE_ID || '12'
       const movies = await discoverMovies(region, language, genre_id);
       console.log(JSON.stringify(movies)); // Log movie result for the agent
+      break;
+    case 'fetch-movie-details':
+      const movieID = process.env.MOVIE_ID || 0; // Default to empty movie
+      const movieDetails = await getMovieDetails(movieID);
+      console.log(JSON.stringify(movieDetails)) // Log movie details for the agent
       break;
     case 'fetch-snacks':
       const snacks = getSnackRecommendations(genre)
